@@ -1,0 +1,20 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - serviceaccount.yml
+  - service.yml
+  - deployment.yml
+  - servicemonitor.yml
+
+configMapGenerator:
+  - name: blackbox-exporter
+    options:
+      labels:
+        app.kubernetes.io/name: blackbox-exporter
+        app.kubernetes.io/component: server
+    files:
+      - config.yml=config/config.yml
+
+...
