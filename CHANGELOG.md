@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/kustomhippie/blackbox-exporter/compare/v2.1.0...v2.2.0) (2025-03-03)
+
+
+### Features
+
+* **deps:** update quay.io/prometheus/blackbox-exporter docker tag to v0.26.0 ([#11](https://github.com/kustomhippie/blackbox-exporter/issues/11)) ([80a9603](https://github.com/kustomhippie/blackbox-exporter/commit/80a96037a00d95a705364d7ec0870b5893b47f4c))
+
 ## [2.1.0](https://github.com/kustomhippie/blackbox-exporter/compare/v2.0.0...v2.1.0) (2024-04-15)
 
 
